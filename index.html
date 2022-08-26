@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora JS</title>
+  <!-------------- Import File CSS -------------->
+  <link rel="stylesheet" href="./src/assets/css/style.css" />
+  <!-------------- Import Fonts CSS -------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+   rel="stylesheet"
+  />
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div data-previous class="previous-operand"></div>
+    <div data-current class="current-operand"></div>
+   </header>
+   <button data-allClean class="span-two-col">AC</button>
+   <button onclick="division()" data-operator class="btn-operator">÷</button>
+   <button onclick="multiplication()" data-operator class="btn-operator">
+    x
+   </button>
+   <button data-numbers>7</button>
+   <button data-numbers>8</button>
+   <button data-numbers>9</button>
+   <button onclick="subtraction()" data-operator class="btn-operator">-</button>
+   <button data-numbers>4</button>
+   <button data-numbers>5</button>
+   <button data-numbers>6</button>
+   <button onclick="sum()" data-operator class="btn-operator">+</button>
+   <button data-numbers>1</button>
+   <button data-numbers>2</button>
+   <button data-numbers>3</button>
+   <button data-equals class="btn-operator span-two-row">=</button>
+   <button data-numbers>0</button>
+   <button data-numbers>.</button>
+   <button data-backspace>⌫</button>
+  </div>
+  <!-------------- Import File Javascript -------------->
+  <script src="./src/app.js"></script>
+ </body>
+</html>
